@@ -11,15 +11,15 @@
 
 using System;
 
-string[] prefFood = { "Mela", "Arancia", "Kiwi", "Pane", "Gelato", "Cioccolato" };
+string[] prefFoods = { "Mela", "Arancia", "Kiwi", "Pane", "Gelato", "Cioccolato" };
 
 //La lunghezza della classifica
-Console.WriteLine($"La lunghezza della classifica: {prefFood.Length} elementi in array");
+Console.WriteLine($"La lunghezza della classifica: {prefFoods.Length} elementi in array");
 
 //La vostra classifica (dunque stampare l’intero array in ordine indicando la posizione in classifica)
 int rank = 1;
 Console.WriteLine("La classifica: ");
-foreach (var elm in prefFood)
+foreach (var elm in prefFoods)
 {
     Console.WriteLine($"n.{rank} - {elm}");
     rank++;
@@ -27,19 +27,19 @@ foreach (var elm in prefFood)
 
 
 //Il vostro cibo top (prima posizione della classifica)
-Console.WriteLine($"Il mio preferito: {prefFood[0]}");
+Console.WriteLine($"Il mio preferito: {prefFoods[0]}");
 
 //Il vostro cibo preferito ma non troppo (ultima posizione della classifica)
-Console.WriteLine($"Il mio preferito ma anche no: {prefFood[prefFood.Length-1]}");
+Console.WriteLine($"Il mio preferito ma anche no: {prefFoods[prefFoods.Length-1]}");
 
 //BONUS Stampate a video anche il cibo di mezza classifica, cioè che si trova nella posizione mediana. Attenzione: gestire anche il caso se aveste una classifica con un numero di elementi pari. In questo caso vanno stampati i 2 elementi in centro alla vostra classifica.
 var middleFood = "";
-if (prefFood.Length % 2 != 0)
+if (prefFoods.Length % 2 != 0)
 {
-    middleFood = prefFood[prefFood.Length/2];
+    middleFood = prefFoods[prefFoods.Length/2];
 }
 else
 {
-    middleFood = ($"{prefFood[prefFood.Length/2]}, {prefFood[prefFood.Length / 2-1]}");
+    middleFood = ($"{prefFoods[prefFoods.Length/2]}, {prefFoods[prefFoods.Length / 2-1]}");
 }
 Console.WriteLine($"Il cibo o i cibi di mezza classifica: {middleFood}");
