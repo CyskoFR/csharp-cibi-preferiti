@@ -36,4 +36,4 @@ else
 {
     middleFood = ($"{prefFoodRanking[prefFoodRanking.Length/2]}, {prefFoodRanking[prefFoodRanking.Length / 2-1]}");
 }
-Console.WriteLine($"Il cibo o i cibi di mezza classifica: {prefFoodRanking[prefFoodRanking.Length / 2]}, {prefFoodRanking[prefFoodRanking.Length / 2 - 1]}");
+Console.WriteLine($"Il cibo o i cibi di mezza classifica: {middleFood}");
